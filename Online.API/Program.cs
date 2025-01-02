@@ -5,6 +5,8 @@ namespace Online.API
     {
         public static void Main(string[] args)
         {
+            #region Service Configuration
+
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
@@ -14,6 +16,9 @@ namespace Online.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            #endregion
+
+            #region Middleware
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -31,6 +36,7 @@ namespace Online.API
             app.MapControllers();
 
             app.Run();
+            #endregion
         }
     }
 }
