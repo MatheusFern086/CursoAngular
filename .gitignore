@@ -1,0 +1,27 @@
+# Binários e pastas de compilação
+bin/
+obj/
+out/
+
+# Arquivos gerados pelo Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Dados de depuração e relatórios
+*.pdb
+*.cache
+*.ilk
+*.dat
+*.orig
+*.err
+*.idb
+*.tlog
+
+# Arquivos de publicação
+publish/
